@@ -1,0 +1,360 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: 'pingfang';
+    src: url("../pingfang.ttf");
+}
+
+html {
+    font-size: 100px;
+    font-family: 'pingfang';
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+/*主界面*/
+
+.play {
+    width: 100%;
+    height: 100%;
+}
+
+/*顶部tab切换栏*/
+
+.play .tab {
+    font-size: .16rem;
+    width: 100%;
+    height: .7rem;
+    background-color: rgb(164, 130, 110);
+    overflow: hidden;
+}
+
+.play .tab ul {
+    display: flex;
+    justify-content: space-around;
+    margin-top: .36rem;
+    color: #fff;
+    padding: 0 .325rem;
+}
+
+/*切换栏盒子*/
+.play .pavilion {
+    width: 100%;
+}
+
+.play .pavilion .search {
+    width: 100%;
+    height: 1.33rem;
+    font-size: 0;
+    background-color: rgb(164, 130, 110);
+}
+
+.play .pavilion .search input {
+    width: 2.9rem;
+    height: .3rem;
+    border: none;
+    outline: none;
+    display: block;
+    margin: 0 auto .06rem auto;
+    color: #fff;
+    border-radius: .15rem;
+    background-color: rgba(255, 255, 255, .23);
+}
+
+.play .pavilion .search .banner {
+    width: 100%;
+    height: 1.35rem;
+    background-color: skyblue;
+    font-size: 30px;
+    color: red;
+    text-align: center;
+    line-height: 1.35rem;
+}
+
+.play .play-icon ul {
+    font-size: .09rem;
+    display: flex;
+    justify-content: space-around;
+    margin-top: .4rem;
+    text-align: center;
+}
+
+.play .play-icon ul li a img {
+    width: .4rem;
+    height: .4rem;
+    border-radius: 50%;
+}
+
+.play .recommend {
+    margin-top: .2rem;
+}
+
+.play .recommend .text {
+    padding: 0 .15rem;
+    display: flex;
+    font-size: .16rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.play .recommend .text a {
+    display: flex;
+    align-items: center;
+    font-size: .11rem;
+}
+
+.play .recommend .text a img {
+    width: .12rem;
+    height: .12rem;
+}
+
+.play .recommend .list {
+    font-size: 0;
+}
+
+.play .recommend .list ul {
+padding: .2rem .15rem 0 .15rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.play .recommend .list ul li {
+    width: 1.13rem;
+    padding-bottom: .14rem;
+
+}
+
+.play .recommend .list ul li a {
+    color: #fff;
+}
+
+.play .recommend .list ul li a .list-img {
+    position: relative;
+    border-radius: .05rem;
+}
+
+.play .recommend .list ul li a .list-img > img {
+    width: 1.13rem;
+    height: 1.13rem;
+}
+
+.play .recommend .list ul li a .list-img .headset {
+    width: .5rem;
+    height: .15rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .34);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 0 0 .05rem;
+}
+
+.play .recommend .list ul li a .list-img .headset > img {
+    width: .11rem;
+    height: .11rem;
+    margin-right: .02rem;
+}
+
+.play .recommend .list ul li a .list-img .headset span {
+    font-size: .09rem;
+}
+
+.play .recommend .list ul li a .list-text {
+    font-size: .1rem;
+    color: black;
+    margin-top: .07rem;
+    padding: 0 .05rem;
+}
+
+/*播放控件*/
+.music {
+    width: 100%;
+    height: .5rem;
+    font-size: .18rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .5);
+    display: flex;
+    color: #fff;
+}
+
+.music .head-img {
+    width: .33rem;
+    height: .33rem;
+    border-radius: 50%;
+    background-color: skyblue;
+}
+
+.music .up, .stop, .down {
+    width: .20rem;
+    height: .20rem;
+    border-radius: 50%;
+    background-color: red;
+}
+
+/*用户页面*/
+.user-box {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -3.75rem;
+    display: flex;
+    transition: all 1s ease-in-out;
+
+}
+
+.user-box .bj {
+    width: .51rem;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .57);
+}
+
+.user {
+    width: 3.24rem;
+    height: 100%;
+    font-size: 0;
+}
+
+.user .user-name {
+    width: 100%;
+    height: 2.1rem;
+    /*height: 2.03rem;*/
+    background-color: rgb(164, 130, 110);
+    padding-top: .5rem;
+    box-sizing: border-box;
+
+}
+
+.user .user-name .user-logo {
+    width: .6rem;
+    height: .6rem;
+    margin: 0 auto;
+}
+
+.user .user-name .user-logo img {
+    width: .6rem;
+    height: .6rem;
+}
+
+.user .user-name .dl {
+    width: 100%;
+    font-size: .18rem;
+    text-align: center;
+    margin-top: .10rem;
+    margin-bottom: .2rem;
+}
+
+.user .user-name .dl a {
+    color: #fff;
+}
+
+.user .user-name .vip {
+    width: 2.9rem;
+    height: .75rem;
+    margin: 0 auto;
+}
+
+.user .user-name .vip img {
+    width: 2.9rem;
+    height: .75rem;
+}
+
+/*功能区*/
+.user {
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.user .my {
+    margin-top: .55rem;
+}
+
+.user .my > ul {
+    display: flex;
+    justify-content: space-around;
+    font-size: .09rem;
+}
+
+.user .my > ul > li a {
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user .my > ul > li a img {
+    width: .30rem;
+    height: .30rem;
+    border-radius: 50%;
+    margin-bottom: .1rem;
+}
+
+.user .set > ul {
+    margin-top: .2rem;
+}
+
+.user .set > ul > li {
+    padding-left: .2rem;
+}
+
+.user .set > ul > li a {
+    display: flex;
+    font-size: .15rem;
+    color: black;
+    padding-top: .23rem;
+}
+
+.user .set > ul > li:nth-child(1) a {
+    padding-top: 0;
+}
+
+.user .set > ul > li a p {
+    padding-left: .2rem;
+}
+
+.user .set > ul > li a img {
+    width: .2rem;
+    height: .2rem;
+}
+
+.user .set > ul > li:last-of-type {
+    position: relative;
+    height: .438rem;
+}
+
+.user .set > ul > li:last-of-type p {
+    padding-left: .1rem;
+}
+
+.user .set > ul > li:nth-child(7) {
+    padding-bottom: .02rem;
+    border-bottom: .01rem solid #e6e6e6;
+}
+
+.user .set > ul > li:last-of-type a:first-of-type {
+    position: absolute;
+    bottom: .1rem;
+    left: 1.48rem;
+}
+
+.user .set > ul > li:last-of-type a:last-of-type {
+    position: absolute;
+    bottom: .1rem;
+    right: .24rem;
+}
