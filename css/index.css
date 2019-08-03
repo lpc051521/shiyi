@@ -81,7 +81,9 @@ html, body {
     text-align: center;
     line-height: 1.35rem;
 }
-
+.play .play-icon a{
+    color: #000;
+}
 .play .play-icon ul {
     font-size: .09rem;
     display: flex;
@@ -112,6 +114,7 @@ html, body {
     display: flex;
     align-items: center;
     font-size: .11rem;
+    color: black;
 }
 
 .play .recommend .text a img {
